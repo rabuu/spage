@@ -1,0 +1,65 @@
+:root {
+	--bg: #282828;
+	--fg: #3c3836;
+	--textcol: #ebdbb2;
+}
+
+body {
+	background: var(--bg);
+}
+
+.searchbox {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin: 0 -50% 0 0;
+	transform: translate(-50%, -50%);
+	background: var(--fg);
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.ducklink {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+}
+
+.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: var(--textcol);
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 50vw;
+}
+
+#links {
+	display: flex;
+	gap: 0 7vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#links a {
+	margin: 0px 20px 0px 20px;
+}
+
+#browser {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
