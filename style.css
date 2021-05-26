@@ -1,6 +1,6 @@
 :root {
-	--bg: #282828;
-	--fg: #3c3836;
+	--bg: #1d2021;
+	--fg: #32302f;
 	--textcol: #ebdbb2;
 }
 
@@ -41,6 +41,7 @@ body {
 	font-size: 16px;
 	transition: 0.4s;
 	line-height: 40px;
+	font-family: monospace;
 	width: 50vw;
 }
 
@@ -55,11 +56,4 @@ body {
 
 #links a {
 	margin: 0px 20px 0px 20px;
-}
-
-#browser {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
