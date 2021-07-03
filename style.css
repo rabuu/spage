@@ -1,3 +1,4 @@
+/* COLOR SCHEMES */
 :root,
 :root.gruvbox {
 	--bg: #1d2021;
@@ -27,6 +28,13 @@
 	--links: flex;
 }
 
+:root.space-blue {
+	--bg: #090c10;
+	--fg: #383d55;
+	--textcol: #f0f6fc;
+	--links: none;
+}
+
 :root.black {
 	--bg: #000000;
 	--fg: #ffffff;
@@ -47,6 +55,7 @@
 	--textcol: #000000;
 	--links: flex;
 }
+
 
 body {
 	background: var(--bg);
@@ -106,6 +115,8 @@ body {
 #theme-popup {
 	display: none;
 	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 	position: fixed;
 	top: 5px;
 	left: 55px;
@@ -114,6 +125,7 @@ body {
 	max-width: 300px;
 	padding: 10px;
 	background-color: var(--fg);
+	color: var(--textcol);
 }
 
 #theme-popup button {
