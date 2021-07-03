@@ -1,14 +1,58 @@
-:root {
+:root,
+:root.gruvbox {
 	--bg: #1d2021;
 	--fg: #32302f;
 	--textcol: #ebdbb2;
+	--links: none;
+}
+
+:root.gruvbox-links {
+	--bg: #1d2021;
+	--fg: #32302f;
+	--textcol: #ebdbb2;
+	--links: flex;
+}
+
+:root.gruvbox-light {
+	--bg: #fbf1c7;
+	--fg: #928374;
+	--textcol: #1d2021;
+	--links: none;
+}
+
+:root.gruvbox-light-links {
+	--bg: #fbf1c7;
+	--fg: #928374;
+	--textcol: #1d2021;
+	--links: flex;
+}
+
+:root.black {
+	--bg: #000000;
+	--fg: #ffffff;
+	--textcol: #000000;
+	--links: none;
+}
+
+:root.white {
+	--bg: #ffffff;
+	--fg: #aaaaaa;
+	--textcol: #000000;
+	--links: none;
+}
+
+:root.white-links {
+	--bg: #ffffff;
+	--fg: #aaaaaa;
+	--textcol: #000000;
+	--links: flex;
 }
 
 body {
 	background: var(--bg);
 }
 
-.searchbox {
+.searchbar {
 	position: absolute;
 	top: 20%;
 	left: 50%;
@@ -16,7 +60,7 @@ body {
 	transform: translate(-50%, -50%);
 	background: var(--fg);
 	height: 40px;
-	border-radius: 40px;
+	border-radius: 15px;
 	padding: 10px;
 	display: flex;
 	justify-content: center;
@@ -46,8 +90,9 @@ body {
 }
 
 #links {
-	display: flex;
-	gap: 0 7vw;
+	display: var(--links);
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -55,5 +100,57 @@ body {
 }
 
 #links a {
-	margin: 0px 20px 0px 20px;
+	margin: 20px;
+}
+
+#theme-popup {
+	display: none;
+	flex-direction: column;
+	position: fixed;
+	top: 5px;
+	left: 55px;
+	border: 3px solid var(--textcol);
+	z-index: 9;
+	max-width: 300px;
+	padding: 10px;
+	background-color: var(--fg);
+}
+
+#theme-popup button {
+	font-family: monospace;
+	color: var(--textcol);
+	border: none;
+	border-bottom: 2px solid var(--bg);
+	background: none;
+	padding-top: 10px;
+}
+
+#theme-popup button:hover {
+	border-bottom: 2px solid var(--textcol);
+	text-transform: uppercase;
+}
+
+#theme-btn {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: var(--fg);
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }

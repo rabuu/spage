@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/png" href="./icons/searx.png"/>
+    <script src="main.js" charset="utf-8"></script>
+    <title>start</title>
+</head>
+<body>
+
+<!-- SEARCH BAR -->
+<form class="searchbar" name="search" action="https://searx.rabuu.xyz/">
+    <input type="text" class="search-txt" autocomplete="off" placeholder="" name="q" autofocus>
+    <a id="searxlink" href="https://searx.rabuu.xyz">
+        <img src="./icons/searx.png" alt="SearX" width="45">
+    </a>
+</form>
+
+<!-- LINKS -->
+<div id="links">
+   	<a href="https://archlinux.org"><img src="./icons/arch.png" alt="Arch" height="80"></a>
+   	<a href="https://suckless.org"><img src="./icons/suckless.png" alt="suckless" height="80"></a>
+	<a href="https://github.com"><img src="./icons/github.png" alt="Github" height="80"></a>
+	<a href="https://wolframalpha.com"><img src="./icons/wolfram-alpha.png" alt="WolframAlpha" height="80"></a>
+   	<a href="https://reddit.com"><img src="./icons/reddit.png" alt="Reddit" height="80"></a>
+   	<a href="https://youtube.com"><img src="./icons/youtube.png" alt="YouTube" height="80"></a>
+   	<a href="https://netflix.com"><img src="./icons/netflix.png" alt="Netflix" height="80"></a>
+	<a href="https://translate.google.com"><img src="./icons/google-translate.png" alt="Google Translate" height="80"></a>
+</div>
+
+<!-- THEME POPUP -->
+<div id="theme-popup">
+    <button onclick="setTheme('gruvbox')">gruvbox dark</button>
+    <button onclick="setTheme('gruvbox-light')">gruvbox light</button>
+    <button onclick="setTheme('gruvbox-links')">gruvbox dark (links)</button>
+    <button onclick="setTheme('gruvbox-light-links')">gruvbox light (links)</button>
+    <button onclick="setTheme('black')">black</button>
+    <button onclick="setTheme('white')">white</button>
+    <button onclick="setTheme('white-links')">white (links)</button>
+</div>
+
+<div id="theme-btn" onclick="themeBtnPressed(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
+
+</body>
+</html>
