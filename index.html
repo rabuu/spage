@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" type="image/png" href="./icons/searx.png"/>
-    <script src="main.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8" async></script>
     <title>start</title>
 </head>
 <body>
@@ -42,10 +42,19 @@
     <button onclick="setTheme('white-links')">white (links)</button>
 </div>
 
+<!-- THEME BUTTON -->
 <div id="theme-btn" onclick="themeBtnPressed(this)">
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
+</div>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner">
+    <p>
+        this site is using a few <a href="https://rabuu.xyz/cookies/cookie-policy.html">cookies</a> to store visitor prefereces.
+    </p>
+    <button onclick="cookieAcceptionClicked()">accept</button>
 </div>
 
 </body>

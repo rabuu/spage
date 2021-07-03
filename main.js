@@ -1,5 +1,10 @@
-const setTheme = theme => document.documentElement.className = theme;
+// SET THEME
+const setTheme = theme => {
+	document.documentElement.className = theme;
+	localStorage.setItem("theme", theme);
+}
 
+// THEME POPUP
 function openThemePopup() {
 	document.getElementById("theme-popup").style.display = "flex";
 }
@@ -16,7 +21,32 @@ function toggleThemePopup() {
 	}
 }
 
+// THEME BUTTON
 function themeBtnPressed(x) {
 	x.classList.toggle("change");
 	toggleThemePopup();
 }
+
+
+// COOKIE BANNER
+function showCookieBanner() {
+	document.getElementById("cookie-banner").style.display = "flex";
+}
+
+function hideCookieBanner() {
+	document.getElementById("cookie-banner").style.display = "none";
+}
+
+function cookieAcceptionClicked() {
+	hideCookieBanner();
+	localStorage.setItem("cookiesAccepted", "true");
+}
+
+
+// ON STARTUP
+
+if (localStorage.getItem("cookiesAccepted") == "true") {
+	hideCookieBanner();
+}
+
+setTheme(localStorage.getItem("theme"));
