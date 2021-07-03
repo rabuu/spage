@@ -63,6 +63,10 @@ body {
 	font-family: monospace;
 }
 
+a, a:visited {
+	color: #458588;
+}
+
 .searchbar {
 	position: absolute;
 	top: 20%;
