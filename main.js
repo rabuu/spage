@@ -45,8 +45,8 @@ function cookieAcceptionClicked() {
 
 // ON STARTUP
 
-if (localStorage.getItem("cookiesAccepted") == "true") {
-	hideCookieBanner();
+if (localStorage.getItem("cookiesAccepted") == "false") {
+	showCookieBanner();
 }
 
 setTheme(localStorage.getItem("theme"));
