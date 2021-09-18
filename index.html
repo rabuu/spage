@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/png" href="./icons/searx.png"/>
     <script src="main.js" charset="utf-8" async></script>
     <title>start</title>
 </head>
 <body>
 
 <!-- SEARCH BAR -->
-<form class="searchbar" name="search" action="https://duckduckgo.com/">
+<form class="searchbar" name="search" action="https://searx.rabuu.de/">
     <input type="text" class="search-txt" autocomplete="off" placeholder="" name="q" autofocus>
-    <a id="ducklink" href="https://duckduckgo.com">
-        <img src="./icons/duck.png" alt="DuckDuckGo" width="45">
+    <a id="searxlink" href="https://searx.rabuu.de">
+        <img src="./icons/searx.png" alt="SearX" width="45">
     </a>
 </form>
 
@@ -26,6 +27,11 @@
    	<a href="https://youtube.com"><img src="./icons/youtube.png" alt="YouTube" height="80"></a>
    	<a href="https://netflix.com"><img src="./icons/netflix.png" alt="Netflix" height="80"></a>
 	<a href="https://translate.google.com"><img src="./icons/google-translate.png" alt="Google Translate" height="80"></a>
+</div>
+
+<!-- HOMEPAGE -->
+<div id="homepage">
+    <a href="https://rabuu.de">home</a>
 </div>
 
 <!-- THEME POPUP -->
@@ -46,6 +52,14 @@
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
+</div>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" style="display: none;">
+    <p>
+        This site is using a few <a href="https://rabuu.de/cookies/cookie-policy.html">cookies</a> to store visitor preferences.
+    </p>
+    <button onclick="cookieAcceptionClicked()">Accept</button>
 </div>
 
 </body>

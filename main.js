@@ -27,6 +27,26 @@ function themeBtnPressed(x) {
 	toggleThemePopup();
 }
 
+
+// COOKIE BANNER
+function showCookieBanner() {
+	document.getElementById("cookie-banner").style.display = "flex";
+}
+
+function hideCookieBanner() {
+	document.getElementById("cookie-banner").style.display = "none";
+}
+
+function cookieAcceptionClicked() {
+	hideCookieBanner();
+	localStorage.setItem("cookiesAccepted", "true");
+}
+
+
 // ON STARTUP
+
+if (localStorage.getItem("cookiesAccepted") == "false") {
+	showCookieBanner();
+}
 
 setTheme(localStorage.getItem("theme"));
