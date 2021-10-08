@@ -27,6 +27,22 @@ function themeBtnPressed(x) {
 	toggleThemePopup();
 }
 
+// LINKS SWITCH
+function linksSwitchChanged(checkbox) {
+	if (checkbox.checked) {
+		document.getElementById("links").style.display = "flex";
+		localStorage.setItem("showLinks", "flex");
+	} else {
+		document.getElementById("links").style.display = "none";
+		localStorage.setItem("showLinks", "none");
+	}
+}
+
+function applyLinksSwitch() {
+	var showLinks = localStorage.getItem("showLinks");
+	document.getElementById("links").style.display = showLinks;
+	document.getElementById("links-checkbox").checked = (showLinks != "none");
+}
 
 // COOKIE BANNER
 function showCookieBanner() {
@@ -44,9 +60,8 @@ function cookieAcceptionClicked() {
 
 
 // ON STARTUP
-
 if (localStorage.getItem("cookiesAccepted") == "false") {
 	showCookieBanner();
 }
-
 setTheme(localStorage.getItem("theme"));
+applyLinksSwitch();

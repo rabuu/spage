@@ -4,56 +4,36 @@
 	--bg: #1d2021;
 	--fg: #32302f;
 	--textcol: #ebdbb2;
-	--links: none;
-}
-
-:root.gruvbox-links {
-	--bg: #1d2021;
-	--fg: #32302f;
-	--textcol: #ebdbb2;
-	--links: flex;
 }
 
 :root.gruvbox-light {
 	--bg: #fbf1c7;
 	--fg: #928374;
 	--textcol: #1d2021;
-	--links: none;
 }
 
-:root.gruvbox-light-links {
-	--bg: #fbf1c7;
-	--fg: #928374;
-	--textcol: #1d2021;
-	--links: flex;
+:root.lapis-lazuli {
+	--bg: #25274d;
+	--fg: #464866;
+	--textcol: #aaabb8;
 }
 
-:root.space-blue {
-	--bg: #090c10;
-	--fg: #383d55;
-	--textcol: #f0f6fc;
-	--links: none;
+:root.gray {
+	--bg: #222629;
+	--fg: #474b4f;
+	--textcol: #000000;
 }
 
 :root.black {
 	--bg: #000000;
 	--fg: #ffffff;
-	--textcol: #000000;
-	--links: none;
+	--textcol: #444444;
 }
 
 :root.white {
 	--bg: #ffffff;
 	--fg: #aaaaaa;
 	--textcol: #000000;
-	--links: none;
-}
-
-:root.white-links {
-	--bg: #ffffff;
-	--fg: #aaaaaa;
-	--textcol: #000000;
-	--links: flex;
 }
 
 
@@ -105,7 +85,6 @@ a, a:visited {
 }
 
 #links {
-	display: var(--links);
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	position: absolute;
@@ -150,7 +129,7 @@ a, a:visited {
 	color: var(--textcol);
 }
 
-#theme-popup button {
+#theme-popup .colorscheme-btn {
 	font-family: monospace;
 	color: var(--textcol);
 	border: none;
@@ -159,9 +138,65 @@ a, a:visited {
 	padding-top: 10px;
 }
 
-#theme-popup button:hover {
+#theme-popup .colorscheme-btn:hover {
 	border-bottom: 2px solid var(--textcol);
 	text-transform: uppercase;
+}
+
+#links-switch {
+	display: block;
+	position: relative;
+	padding-top: 17px;
+	padding-left: 25px;
+	margin: 6px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#links-switch input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: var(--bg);
+}
+
+#links-switch:hover input ~ .checkmark {
+	border: 1px solid var(--textcol);
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+#links-switch input:checked ~ .checkmark:after {
+	display: block;
+}
+
+#links-switch .checkmark:after {
+	left: 7px;
+	top: 4px;
+	width: 4px;
+	height: 8px;
+	border: solid var(--textcol);
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 #theme-btn {
