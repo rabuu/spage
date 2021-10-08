@@ -70,6 +70,11 @@ a, a:visited {
 	float: right;
 }
 
+.searxlink img {
+	position: absolute;
+	right: 2%;
+}
+
 .search-txt {
 	border: none;
 	background: none;
@@ -84,7 +89,7 @@ a, a:visited {
 	width: 50vw;
 }
 
-#links {
+.links {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	position: absolute;
@@ -93,7 +98,7 @@ a, a:visited {
 	transform: translate(-50%, -50%);
 }
 
-#links a {
+.links a {
 	margin: 20px;
 }
 
@@ -143,7 +148,7 @@ a, a:visited {
 	text-transform: uppercase;
 }
 
-#links-switch {
+.theme-switch {
 	display: block;
 	position: relative;
 	padding-top: 17px;
@@ -156,7 +161,7 @@ a, a:visited {
 	user-select: none;
 }
 
-#links-switch input {
+.theme-switch input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
@@ -173,7 +178,7 @@ a, a:visited {
 	background-color: var(--bg);
 }
 
-#links-switch:hover input ~ .checkmark {
+.theme-switch:hover input ~ .checkmark {
 	border: 1px solid var(--textcol);
 }
 
@@ -183,11 +188,11 @@ a, a:visited {
 	display: none;
 }
 
-#links-switch input:checked ~ .checkmark:after {
+.theme-switch input:checked ~ .checkmark:after {
 	display: block;
 }
 
-#links-switch .checkmark:after {
+.theme-switch .checkmark:after {
 	left: 7px;
 	top: 4px;
 	width: 4px;
