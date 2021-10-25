@@ -18,6 +18,12 @@
 	--textcol: #000000;
 }
 
+:root.one-dark {
+	--bg: #282c34;
+	--fg: #17191e;
+	--textcol: #abb2bf;
+}
+
 :root.gruvbox {
 	--bg: #1d2021;
 	--fg: #32302f;
