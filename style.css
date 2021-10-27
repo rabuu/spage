@@ -122,7 +122,7 @@ a, a:visited {
 	position: fixed;
 	top: 5px;
 	left: 55px;
-	border: 3px solid var(--textcol) !important;
+	border: 3px solid var(--textcol);
 	z-index: 9;
 	max-width: 300px;
 	padding: 10px;
@@ -134,13 +134,13 @@ a, a:visited {
 	font-family: monospace;
 	color: var(--textcol) !important;
 	border: none;
-	border-bottom: 2px solid var(--bg) !important;
+	border-bottom: 2px solid var(--bg);
 	background: none;
 	padding-top: 10px;
 }
 
 #theme-popup .colorscheme-btn:hover {
-	border-bottom: 2px solid var(--textcol) !important;
+	border-bottom: 2px solid var(--textcol);
 	text-transform: uppercase;
 }
 
@@ -175,7 +175,7 @@ a, a:visited {
 }
 
 .theme-switch:hover input ~ .checkmark {
-	border: 1px solid var(--textcol) !important;
+	border: 1px solid var(--textcol);
 }
 
 .checkmark:after {
@@ -193,7 +193,7 @@ a, a:visited {
 	top: 4px;
 	width: 4px;
 	height: 8px;
-	border: solid var(--textcol) !important;
+	border: solid var(--textcol);
 	border-width: 0 3px 3px 0;
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
