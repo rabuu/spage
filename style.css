@@ -43,14 +43,19 @@
 }
 
 
+html {
+    background: var(--bg) !important;
+    color: var(--textcol) !important;
+}
+
 body {
-	background: var(--bg);
-	color: var(--textcol);
+	background: var(--bg) !important;
+	color: var(--textcol) !important;
 	font-family: monospace;
 }
 
 a, a:visited {
-	color: #458588;
+	color: #458588 !important;
 }
 
 .searchbar {
@@ -59,7 +64,7 @@ a, a:visited {
 	left: 50%;
 	margin: 0 -50% 0 0;
 	transform: translate(-50%, -50%);
-	background: var(--fg);
+	background: var(--fg) !important;
 	height: 40px;
 	border-radius: 15px;
 	padding: 10px;
@@ -87,7 +92,7 @@ a, a:visited {
 	outline: none;
 	float: left;
 	padding: 0;
-	color: var(--textcol);
+	color: var(--textcol) !important;
 	font-size: 16px;
 	transition: 0.4s;
 	line-height: 40px;
@@ -117,7 +122,7 @@ a, a:visited {
 }
 
 #homepage a {
-	color: var(--fg);
+	color: var(--fg) !important;
 	text-decoration: none;
 }
 
@@ -133,25 +138,25 @@ a, a:visited {
 	position: fixed;
 	top: 5px;
 	left: 55px;
-	border: 3px solid var(--textcol);
+	border: 3px solid var(--textcol) !important;
 	z-index: 9;
 	max-width: 300px;
 	padding: 10px;
-	background-color: var(--fg);
-	color: var(--textcol);
+	background-color: var(--fg) !important;
+	color: var(--textcol) !important;
 }
 
 #theme-popup .colorscheme-btn {
 	font-family: monospace;
-	color: var(--textcol);
+	color: var(--textcol) !important;
 	border: none;
-	border-bottom: 2px solid var(--bg);
+	border-bottom: 2px solid var(--bg) !important;
 	background: none;
 	padding-top: 10px;
 }
 
 #theme-popup .colorscheme-btn:hover {
-	border-bottom: 2px solid var(--textcol);
+	border-bottom: 2px solid var(--textcol) !important;
 	text-transform: uppercase;
 }
 
@@ -182,11 +187,11 @@ a, a:visited {
 	left: 0;
 	height: 20px;
 	width: 20px;
-	background-color: var(--bg);
+	background-color: var(--bg) !important;
 }
 
 .theme-switch:hover input ~ .checkmark {
-	border: 1px solid var(--textcol);
+	border: 1px solid var(--textcol) !important;
 }
 
 .checkmark:after {
@@ -204,7 +209,7 @@ a, a:visited {
 	top: 4px;
 	width: 4px;
 	height: 8px;
-	border: solid var(--textcol);
+	border: solid var(--textcol) !important;
 	border-width: 0 3px 3px 0;
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
@@ -219,7 +224,7 @@ a, a:visited {
 .bar1, .bar2, .bar3 {
 	width: 35px;
 	height: 5px;
-	background-color: var(--fg);
+	background-color: var(--fg) !important;
 	margin: 6px 0;
 	transition: 0.4s;
 }
@@ -244,9 +249,9 @@ a, a:visited {
 	padding: 5px 15px;
 	display: flex;
 	text-align: center;
-	background: var(--fg);
-	color: var(--textcol);
-	border: 3px solid var(--textcol);
+	background: var(--fg) !important;
+	color: var(--textcol) !important;
+	border: 3px solid var(--textcol) !important;
 	z-index: 5;
 	gap: 10px;
 }
@@ -254,11 +259,11 @@ a, a:visited {
 #cookie-banner button {
 	margin: 10px;
 	background: none;
-	border: 2px solid var(--textcol);
-	color: var(--textcol);
+	border: 2px solid var(--textcol) !important;
+	color: var(--textcol) !important;
 }
 
 #cookie-banner button:hover {
-	background-color: var(--textcol);
-	color: var(--fg);
+	background-color: var(--textcol) !important;
+	color: var(--fg) !important;
 }
