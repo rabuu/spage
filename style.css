@@ -1,5 +1,11 @@
 /* COLOR SCHEMES */
 :root,
+:root.one-dark {
+	--bg: #282c34;
+	--fg: #17191e;
+	--textcol: #abb2bf;
+}
+
 :root.gray {
 	--bg: #222629;
 	--fg: #474b4f;
@@ -16,12 +22,6 @@
 	--bg: #ffffff;
 	--fg: #aaabb8;
 	--textcol: #000000;
-}
-
-:root.one-dark {
-	--bg: #282c34;
-	--fg: #17191e;
-	--textcol: #abb2bf;
 }
 
 :root.gruvbox {
