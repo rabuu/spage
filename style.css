@@ -1,15 +1,15 @@
 /* COLOR SCHEMES */
 :root,
-:root.one-dark {
-	--bg: #282c34;
-	--fg: #17191e;
-	--textcol: #abb2bf;
-}
-
 :root.gray {
 	--bg: #222629;
 	--fg: #474b4f;
 	--textcol: #000000;
+}
+
+:root.one-dark {
+	--bg: #282c34;
+	--fg: #17191e;
+	--textcol: #abb2bf;
 }
 
 :root.black {
