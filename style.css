@@ -72,6 +72,7 @@ a, a:visited {
 	justify-content: center;
 	align-items: center;
 	gap: 5px;
+	z-index: 8;
 }
 
 .ducklink {
