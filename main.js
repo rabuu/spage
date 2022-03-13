@@ -96,7 +96,7 @@ function cookieAcceptionClicked() {
 }
 
 // ON STARTUP
-if (localStorage.getItem("cookiesAccepted") == "false") {
+if (localStorage.getItem("cookiesAccepted") === null) {
 	showCookieBanner();
 }
 setTheme(localStorage.getItem("theme"));
